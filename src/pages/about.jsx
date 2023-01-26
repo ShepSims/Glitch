@@ -8,21 +8,23 @@ import { animated } from "react-spring";
 * This component is attached to the /about path in router.jsx
 */
 
+
+
+
 export default function About() {
-  /* DECLARE STYLE AND TRIGGER FOR WIGGLE EFFECT FROM TODO ON NEXT LINE */
-  
+  /* DECLARE STYLE const [style, trigger] = useWiggle({ x: 50, rotation: 1, scale: 1.2 });
+AND TRIGGER FOR WIGGLE EFFECT FROM TODO ON NEXT LINE */
+  const [style, trigger] = useWiggle({ x: 50, rotation: 1, scale: 1.2 });
+
   return (
     <div className="page">
       {/* REPLACE H1 ELEMENT BELOW WITH CODE FROM TODO */}
-      <h1 className="title">
-        About this site
-      </h1>
-      {/* REPLACE OPENING P TAG BELOW WITH CODE FROM TODO */}
-      <p>
-        Welcome to the Glitch React starter, where you can instantly create a
-        React site that's fully customizable.
-      </p>
-      <p>
+<animated.h1 className="title" style={style}>
+How can I set up my own site?
+</animated.h1>
+
+      <p onMouseEnter={trigger}>
+
         <em>
           If you're completely new to React, learning the{" "}
           <a href="https://reactjs.org/docs/hello-world.html">main concepts</a>{" "}
@@ -31,42 +33,26 @@ export default function About() {
         </em>
       </p>
       <p>
-        This page is a great spot to tell the world a few details about the new
-        React app you built on Glitch! Check out your project's{" "}
-        <code>readme</code> file to learn more about how to customize your
-        content.
+        This is a great way to break into the world of web development, or programming in general.  It's probably worth nothing that a lot of this content was written by AI, so if any of the constrcutions dont make sense... Just blame Elon
+
+
       </p>
       <ul>
         <li>
-          🎉 Right now, your site is <strong>live on the web</strong> 🌐 with a
-          real URL (a secure HTTPS address!) that updates as soon as you make
+          🎉 Right now, this site is <strong>live on the web</strong> 🌐 with a
+          real URL (a secure HTTPS address!) that updates as soon as I want to make any kinds of charges
           changes.
         </li>
         <li>
-          💥 <strong>Add a domain</strong> to your new Glitch project! Just go
-          to the <strong>Tools</strong> menu in the Glitch editor, and click{" "}
-          <strong>Custom Domains</strong>.
-        </li>
-        <li>
-          🌈 Use the <strong>Share</strong> button in the Glitch editor to
-          invite others in to edit your new React project by typing in their
-          email address or Glitch username. <br /> <strong>Tip:</strong> 👀Make
-          your code, or even your entire app, private to just those you invite,
-          by{" "}
-          <a href="https://glitch.com/pricing">upgrading your Glitch account</a>
-          .
+          💥 <strong>Lets learn</strong> what I've done in the last 15 minutes to go from 0 to deployed
         </li>
       </ul>
 
       <p>
-        {" "}
-        The Glitch community is glad to welcome you, and the Internet is better
-        when it's made by real people. We can't wait to see what you create!
+        
       </p>
       <p>
-        Built with <a href="https://reactjs.org/">React</a> and{" "}
-        <a href="https://vitejs.dev/">Vite</a> on{" "}
-        <a href="https://glitch.com/">Glitch</a>.
+        Also <a href="https://reactjs.org/">Check out this cool article on why AI matters in the dev world</a>
       </p>
     </div>
   );
