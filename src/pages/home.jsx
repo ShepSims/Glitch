@@ -76,7 +76,7 @@ export default function Home() {
       <div className="instructions">
         <h2>Sheps React Playground</h2>
         <p>
-          This is Sheps <strong>Hello React</strong> project.  It's a custom web application running on a Node.js server for free with Glitch. 
+          This is a Sheep <strong>Hello React</strong> project.  It's a custom web application running on a Node.js server for free with Glitch. 
         </p>
                   <a className="btn--click-me" onClick={incrementCounter}>
 {clickCount}</a>
